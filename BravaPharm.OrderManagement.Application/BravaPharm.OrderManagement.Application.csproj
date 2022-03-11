@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BravaPharm.OrderManagement.Domain\BravaPharm.OrderManagement.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

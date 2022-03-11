@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BravaPharm.OrderManagement.Domain.Entities
 {
-    public class Product : AuditableEntity
+    public class Product : BaseEntity
     {
         public Guid ProductId { get; set; }
         public string ProductName { get; set; } = string.Empty;

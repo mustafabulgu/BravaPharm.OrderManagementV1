@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BravaPharm.OrderManagement.Domain.Entities
 {
-    public class AuditableEntity
+    public class BaseEntity
     {
         public string CreatedBy { get; set; } = string.Empty;
         public DateTime CreatedDate { get; set; }
