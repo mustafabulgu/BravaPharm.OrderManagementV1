@@ -18,5 +18,28 @@ namespace BravaPharm.OrderManagement.Persistence
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(BravaPharmDbContext).Assembly);
+            
+           
+        }
+        public override Task<int> SaveChangesAsync(CancellationToken cancellation = new CancellationToken())
+        {
+            foreach(var entry in ChangeTracker.Entries<BaseEntity>() )
+            {
+                if(entry.State == EntityState.Added)
+                {
+                    entry.Entity.CreatedDate = DateTime.Now;
+                    entry.Entity.CreatedBy = "mbulgu";
+                }
+                if (entry.State == EntityState.Modified)
+                {
+                    entry.Entity.LastModifiedDate = DateTime.Now;
+                    entry.Entity.LastModifiedBy = "mbulgu";
+                }
+            }
+            return base.SaveChangesAsync(cancellation);
+        }
     }
 }
