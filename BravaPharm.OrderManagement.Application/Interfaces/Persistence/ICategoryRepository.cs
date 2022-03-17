@@ -9,6 +9,6 @@ namespace BravaPharm.OrderManagement.Application.Interfaces.Persistence
 {
     public interface ICategoryRepository : IBaseRepository<Category>
     {
-        Category GetCategoryWithProducts(Guid categoryId);
+        Task<Category> GetCategoryWithProductsAsync(Guid categoryId);
     }
 }

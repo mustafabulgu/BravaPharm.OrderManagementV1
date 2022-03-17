@@ -18,9 +18,9 @@ namespace BravaPharm.OrderManagement.Persistence.Repositories
            
         }
 
-        public Category GetCategoryWithProducts(Guid categoryId)
+        public async Task<Category> GetCategoryWithProductsAsync(Guid categoryId)
         {
-           return  _bravaPharmDbContext.Categories.Include(c=>c.Products).FirstOrDefault(c=>c.CategoryId == categoryId);
+           return await _bravaPharmDbContext.Categories.Include(c=>c.Products).FirstOrDefaultAsync (c=>c.CategoryId == categoryId);
         }
     }
 }
