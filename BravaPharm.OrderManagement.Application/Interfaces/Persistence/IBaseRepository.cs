@@ -12,7 +12,7 @@ namespace BravaPharm.OrderManagement.Application.Interfaces.Persistence
         Task<T> CreateAsync(T entity);
         Task<T> UpdateAsync(T entity);
         Task DeleteAsync(T entity);
-        Task<T> GetById(Guid id);
+        Task<T> GetByIdAsync(Guid id);
         Task<IReadOnlyList<T>> GetAllAsync();
 
     }

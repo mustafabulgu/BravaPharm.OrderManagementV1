@@ -33,7 +33,7 @@ namespace BravaPharm.OrderManagement.Persistence.Repositories
             return await _bravaPharmDbContext.Set<T>().ToListAsync();
         }
 
-        public async Task<T> GetById(Guid id)
+        public async Task<T> GetByIdAsync(Guid id)
         {
             return await _bravaPharmDbContext.Set<T>().FindAsync(id);
         }

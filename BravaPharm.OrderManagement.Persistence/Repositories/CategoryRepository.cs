@@ -22,5 +22,11 @@ namespace BravaPharm.OrderManagement.Persistence.Repositories
         {
            return await _bravaPharmDbContext.Categories.Include(c=>c.Products).FirstOrDefaultAsync (c=>c.CategoryId == categoryId);
         }
+
+        public Task<bool> IsUniqueCategory(string name)
+        {
+            var categoryExists = _bravaPharmDbContext.Categories.Any(c => c.Name == name);
+            return Task.FromResult(!categoryExists);
+        }
     }
 }

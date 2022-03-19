@@ -7,9 +7,8 @@ using BravaPharm.OrderManagement.Domain.Entities;
 
 namespace BravaPharm.OrderManagement.Application.Interfaces.Persistence
 {
-    public interface ICategoryRepository : IBaseRepository<Category>
+    public interface IProductRepository : IBaseRepository<Product>
     {
-        Task<Category> GetCategoryWithProductsAsync(Guid categoryId);
-        Task<bool> IsUniqueCategory(string name);
+        Task<bool> IsProductUniqueForCategory(string productName, Guid categoryId);
     }
 }

@@ -24,10 +24,10 @@ namespace BravaPharm.OrderManagement.Application.Features.Products.Queries.GetPr
         }
         public async Task<ProductDetailVm> Handle(GetProductDetailQuery request, CancellationToken cancellationToken)
         {
-            var product = await _productRepository.GetById(request.Id);
+            var product = await _productRepository.GetByIdAsync(request.Id);
             var productDto = _mapper.Map<ProductDetailVm>(product);
 
-            var category = await _categoryRepository.GetById(productDto.CategoryId);
+            var category = await _categoryRepository.GetByIdAsync(productDto.CategoryId);
             productDto.Category = _mapper.Map<CategoryDto>(category);
             return productDto;
         }
