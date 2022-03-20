@@ -14,6 +14,7 @@ namespace BravaPharm.OrderManagement.Persistence
             services.AddDbContext<BravaPharmDbContext>(o => o.UseSqlServer(configuration.GetConnectionString("BravaPharmConnectionString")));
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
             return services;
         }
     }

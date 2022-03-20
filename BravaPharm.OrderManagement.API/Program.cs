@@ -1,10 +1,18 @@
+using BravaPharm.OrderManagement.Application;
 using BravaPharm.OrderManagement.Persistence;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddApplicationServiceRegistrations();
 builder.Services.AddPersistenceServiceRegistrations(builder.Configuration);
 builder.Services.AddControllers();
+
+builder.Services.AddCors(options => 
+{
+    options.AddPolicy("AllowAll", options => options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+});
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -16,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BravaPharm.OrderManagement.Application\BravaPharm.OrderManagement.Application.csproj" />
+    <ProjectReference Include="..\BravaPharm.OrderManagement.Infrastructure\BravaPharm.OrderManagement.Infrastructure.csproj" />
     <ProjectReference Include="..\BravaPharm.OrderManagement.Persistence\BravaPharm.OrderManagement.Persistence.csproj" />
   </ItemGroup>
 
