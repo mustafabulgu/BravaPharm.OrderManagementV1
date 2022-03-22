@@ -9,31 +9,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6F2CA5F5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{5191C000-FE45-4EC0-8212-4935C07C1CD3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{CE9D00F5-FA5D-450A-AF25-43F73210A3EE}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F999A932-D75B-422D-94E3-6DB0F8D1838D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{8EA68CA5-E404-4ACF-B0DA-E41FB9FB2315}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BravaPharm.OrderManagement.API", "BravaPharm.OrderManagement.API\BravaPharm.OrderManagement.API.csproj", "{D9FD3642-B58D-4220-872D-FCA1144B2D4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.API", "BravaPharm.OrderManagement.API\BravaPharm.OrderManagement.API.csproj", "{D9FD3642-B58D-4220-872D-FCA1144B2D4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BravaPharm.OrderManagement.Application", "BravaPharm.OrderManagement.Application\BravaPharm.OrderManagement.Application.csproj", "{9B9C9593-AC84-405F-8149-1600DD609826}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.Application", "BravaPharm.OrderManagement.Application\BravaPharm.OrderManagement.Application.csproj", "{9B9C9593-AC84-405F-8149-1600DD609826}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BravaPharm.OrderManagement.Domain", "BravaPharm.OrderManagement.Domain\BravaPharm.OrderManagement.Domain.csproj", "{B43C5EA8-60B8-41D8-BA1B-FFC522836914}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.Domain", "BravaPharm.OrderManagement.Domain\BravaPharm.OrderManagement.Domain.csproj", "{B43C5EA8-60B8-41D8-BA1B-FFC522836914}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BravaPharm.OrderManagement.Infrastructure", "BravaPharm.OrderManagement.Infrastructure\BravaPharm.OrderManagement.Infrastructure.csproj", "{7202BF9B-7BD2-410C-9812-911A7D83DC94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.Infrastructure", "BravaPharm.OrderManagement.Infrastructure\BravaPharm.OrderManagement.Infrastructure.csproj", "{7202BF9B-7BD2-410C-9812-911A7D83DC94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BravaPharm.OrderManagement.Persistence", "BravaPharm.OrderManagement.Persistence\BravaPharm.OrderManagement.Persistence.csproj", "{04FF5C4D-7708-4379-B821-5FB3405C1116}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.Persistence", "BravaPharm.OrderManagement.Persistence\BravaPharm.OrderManagement.Persistence.csproj", "{04FF5C4D-7708-4379-B821-5FB3405C1116}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BravaPharm.OrderManagement.App.Server", "BravaPharm.OrderManagement.App\Server\BravaPharm.OrderManagement.App.Server.csproj", "{0A20AFAD-9D22-40EC-9E4C-90BF97644768}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.Application.UnitTests", "BravaPharm.OrderManagement.Application.UnitTests\BravaPharm.OrderManagement.Application.UnitTests.csproj", "{099D450A-2E86-4CE2-A6B7-48437A6BB7EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BravaPharm.OrderManagement.App.Client", "BravaPharm.OrderManagement.App\Client\BravaPharm.OrderManagement.App.Client.csproj", "{15514CD4-50D0-4921-93E6-3C3C60ECF704}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BravaPharm.OrderManagement.App.Shared", "BravaPharm.OrderManagement.App\Shared\BravaPharm.OrderManagement.App.Shared.csproj", "{028C6397-2A86-457E-9BC7-528BE66E9C69}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BravaPharm.OrderManagement.Application.UnitTests", "BravaPharm.OrderManagement.Application.UnitTests\BravaPharm.OrderManagement.Application.UnitTests.csproj", "{099D450A-2E86-4CE2-A6B7-48437A6BB7EF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BravaPharm.OrderManagement.API.IntegrationTests", "BravaPharm.OrderManagement.API.IntegrationTests\BravaPharm.OrderManagement.API.IntegrationTests.csproj", "{35C95CCB-21C5-4561-9D73-93FBA8BB3B08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.API.IntegrationTests", "BravaPharm.OrderManagement.API.IntegrationTests\BravaPharm.OrderManagement.API.IntegrationTests.csproj", "{35C95CCB-21C5-4561-9D73-93FBA8BB3B08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,18 +53,6 @@ Global
 		{04FF5C4D-7708-4379-B821-5FB3405C1116}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04FF5C4D-7708-4379-B821-5FB3405C1116}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04FF5C4D-7708-4379-B821-5FB3405C1116}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0A20AFAD-9D22-40EC-9E4C-90BF97644768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A20AFAD-9D22-40EC-9E4C-90BF97644768}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A20AFAD-9D22-40EC-9E4C-90BF97644768}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A20AFAD-9D22-40EC-9E4C-90BF97644768}.Release|Any CPU.Build.0 = Release|Any CPU
-		{15514CD4-50D0-4921-93E6-3C3C60ECF704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15514CD4-50D0-4921-93E6-3C3C60ECF704}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15514CD4-50D0-4921-93E6-3C3C60ECF704}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15514CD4-50D0-4921-93E6-3C3C60ECF704}.Release|Any CPU.Build.0 = Release|Any CPU
-		{028C6397-2A86-457E-9BC7-528BE66E9C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{028C6397-2A86-457E-9BC7-528BE66E9C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{028C6397-2A86-457E-9BC7-528BE66E9C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{028C6397-2A86-457E-9BC7-528BE66E9C69}.Release|Any CPU.Build.0 = Release|Any CPU
 		{099D450A-2E86-4CE2-A6B7-48437A6BB7EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{099D450A-2E86-4CE2-A6B7-48437A6BB7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{099D450A-2E86-4CE2-A6B7-48437A6BB7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,7 +67,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5191C000-FE45-4EC0-8212-4935C07C1CD3} = {42068E35-7E22-4AD9-8172-F3E5D3DCAC8B}
-		{CE9D00F5-FA5D-450A-AF25-43F73210A3EE} = {42068E35-7E22-4AD9-8172-F3E5D3DCAC8B}
 		{F999A932-D75B-422D-94E3-6DB0F8D1838D} = {42068E35-7E22-4AD9-8172-F3E5D3DCAC8B}
 		{8EA68CA5-E404-4ACF-B0DA-E41FB9FB2315} = {42068E35-7E22-4AD9-8172-F3E5D3DCAC8B}
 		{D9FD3642-B58D-4220-872D-FCA1144B2D4A} = {5191C000-FE45-4EC0-8212-4935C07C1CD3}
@@ -95,9 +74,6 @@ Global
 		{B43C5EA8-60B8-41D8-BA1B-FFC522836914} = {F999A932-D75B-422D-94E3-6DB0F8D1838D}
 		{7202BF9B-7BD2-410C-9812-911A7D83DC94} = {8EA68CA5-E404-4ACF-B0DA-E41FB9FB2315}
 		{04FF5C4D-7708-4379-B821-5FB3405C1116} = {8EA68CA5-E404-4ACF-B0DA-E41FB9FB2315}
-		{0A20AFAD-9D22-40EC-9E4C-90BF97644768} = {CE9D00F5-FA5D-450A-AF25-43F73210A3EE}
-		{15514CD4-50D0-4921-93E6-3C3C60ECF704} = {CE9D00F5-FA5D-450A-AF25-43F73210A3EE}
-		{028C6397-2A86-457E-9BC7-528BE66E9C69} = {CE9D00F5-FA5D-450A-AF25-43F73210A3EE}
 		{099D450A-2E86-4CE2-A6B7-48437A6BB7EF} = {6F2CA5F5-87A8-47CA-9643-5A22D7FCF712}
 		{35C95CCB-21C5-4561-9D73-93FBA8BB3B08} = {6F2CA5F5-87A8-47CA-9643-5A22D7FCF712}
 	EndGlobalSection
