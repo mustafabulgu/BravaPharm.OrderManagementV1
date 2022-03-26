@@ -1,3 +1,4 @@
+using BravaPharm.OrderManagement.API.Middleware;
 using BravaPharm.OrderManagement.Application;
 using BravaPharm.OrderManagement.Persistence;
 using Microsoft.AspNetCore.Cors.Infrastructure;
@@ -22,6 +23,7 @@ var app = builder.Build();
 
 
 app.UseDeveloperExceptionPage();
+app.UseMiddleware<ExcetionHandlerMiddleware>();
 // Configure the HTTP request pipeline.
 //if (app.Environment.IsDevelopment())
 {

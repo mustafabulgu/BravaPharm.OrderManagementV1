@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using BravaPharm.OrderManagement.Application.Exceptions;
 using BravaPharm.OrderManagement.Application.Interfaces.Persistence;
+using BravaPharm.OrderManagement.Domain.Entities;
 using MediatR;
 
 namespace BravaPharm.OrderManagement.Application.Features.Categories.Queries.GetCategoryDetail
@@ -22,6 +24,10 @@ namespace BravaPharm.OrderManagement.Application.Features.Categories.Queries.Get
         public async Task<CategoryDetailVm> Handle(GetCategoryDetailQuery request, CancellationToken cancellationToken)
         {
             var category = await _categoryRepository.GetCategoryWithProductsAsync(request.Id);
+            if(category == null)
+            {
+                throw new NotFoundException(nameof(Category), request.Id);
+            }
             return _mapper.Map<CategoryDetailVm>(category);
         }
     }
