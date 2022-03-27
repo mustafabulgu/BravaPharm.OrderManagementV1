@@ -16,15 +16,18 @@ namespace BravaPharm.OrderManagement.API.Controllers
     public class CategoryController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly ILogger<CategoryController> _logger;
 
-        public CategoryController(IMediator mediator)
+        public CategoryController(IMediator mediator, ILogger<CategoryController> logger)
         {
             _mediator = mediator;
+            _logger = logger;
         }
 
         [HttpGet("all", Name ="GetAllCategories")]
         public async Task<ActionResult<List<CategorySimpleVm>>> GetAllCategories()
         {
+            _logger.LogInformation("Getting all Categories");
             var request = new GetCategoryListQuery();
             var response =   await _mediator.Send(request);
             return Ok(response);
@@ -33,6 +36,7 @@ namespace BravaPharm.OrderManagement.API.Controllers
         [HttpGet("getbyid", Name = "GetCategoryDetails")]
         public async Task<ActionResult<CategoryDetailVm>> GetCategory(Guid id)
         {
+            _logger.LogInformation($"Getting category details {id}");
             var request = new GetCategoryDetailQuery { Id = id };
             var response = await _mediator.Send(request);
             return Ok(response);
@@ -41,6 +45,7 @@ namespace BravaPharm.OrderManagement.API.Controllers
         [HttpPost(Name ="AddCategory")]
         public async Task<ActionResult<Guid>> CreateCategory([FromBody]CreateCategoryCommand createCategoryCommand)
         {
+            _logger.LogInformation($"Adding category {createCategoryCommand.Name}");
             var response = await _mediator.Send(createCategoryCommand);
             return Ok(response);
         }

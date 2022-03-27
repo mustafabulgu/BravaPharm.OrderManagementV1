@@ -2,6 +2,7 @@ using BravaPharm.OrderManagement.API.Middleware;
 using BravaPharm.OrderManagement.Application;
 using BravaPharm.OrderManagement.Persistence;
 using Microsoft.AspNetCore.Cors.Infrastructure;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,8 +20,19 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .CreateLogger();
+
+
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
+
 var app = builder.Build();
 
+
+
+Log.Information("Starting up...");
 
 app.UseDeveloperExceptionPage();
 app.UseMiddleware<ExcetionHandlerMiddleware>();
@@ -43,5 +55,5 @@ using (var scope = app.Services.CreateScope())
     var dbContext = scope.ServiceProvider.GetRequiredService<BravaPharmDbContext>();
     await BravaPharmDbContextSeeder.SeedAsync(dbContext);
 }
-
+Log.Information("Running...");
 app.Run();
