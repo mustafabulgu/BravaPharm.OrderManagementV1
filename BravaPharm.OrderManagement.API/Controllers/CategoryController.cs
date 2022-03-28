@@ -4,8 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BravaPharm.OrderManagement.Application.Features.Categories.Commands.CreateCategory;
+using BravaPharm.OrderManagement.Application.Features.Categories.Commands.DeleteCategory;
+using BravaPharm.OrderManagement.Application.Features.Categories.Commands.UpdateCategory;
 using BravaPharm.OrderManagement.Application.Features.Categories.Queries.GetCategoryDetail;
 using BravaPharm.OrderManagement.Application.Features.Categories.Queries.GetCategoryList;
+using BravaPharm.OrderManagement.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -48,6 +51,23 @@ namespace BravaPharm.OrderManagement.API.Controllers
             _logger.LogInformation($"Adding category {createCategoryCommand.Name}");
             var response = await _mediator.Send(createCategoryCommand);
             return Ok(response);
+        }
+
+        [HttpPut(Name = "UpdateCategory")]
+        public async Task<ActionResult> UpdateCategory([FromBody] UpdateCategoryCommand updateCategoryCommand)
+        {
+            _logger.LogInformation($"Updating category {updateCategoryCommand.CategoryId}");
+            await _mediator.Send(updateCategoryCommand);
+            return NoContent();
+        }
+
+        [HttpDelete(Name = "DeleteCategory")]
+        public async Task<ActionResult> DeleteCategory(Guid categoryId)
+        {
+            _logger.LogInformation($"Deleting category {categoryId}");
+            var deleteCategoryCommand = new DeleteCategoryCommand { CategoryId = categoryId };
+            await _mediator.Send(deleteCategoryCommand);
+            return NoContent();
         }
     }
 }

@@ -7,9 +7,12 @@ namespace BravaPharm.OrderManagement.API.Middleware
     public class ExcetionHandlerMiddleware
     {
         private readonly RequestDelegate _next;
-        public ExcetionHandlerMiddleware(RequestDelegate next)
+        private readonly ILogger<ExcetionHandlerMiddleware> _logger;
+
+        public ExcetionHandlerMiddleware(RequestDelegate next, ILogger<ExcetionHandlerMiddleware> logger)
         {
             _next = next;
+            _logger = logger;
         }
         public async Task InvokeAsync(HttpContext context)
         {
@@ -20,6 +23,7 @@ namespace BravaPharm.OrderManagement.API.Middleware
             }
             catch(Exception ex)
             {
+                _logger.LogError(ex.ToString());
                 ConvertToHttpStatusCode(context, ex);
             }
         }

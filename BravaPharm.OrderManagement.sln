@@ -23,10 +23,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.Persistence", "BravaPharm.OrderManagement.Persistence\BravaPharm.OrderManagement.Persistence.csproj", "{04FF5C4D-7708-4379-B821-5FB3405C1116}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.Application.UnitTests", "BravaPharm.OrderManagement.Application.UnitTests\BravaPharm.OrderManagement.Application.UnitTests.csproj", "{099D450A-2E86-4CE2-A6B7-48437A6BB7EF}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.API.IntegrationTests", "BravaPharm.OrderManagement.API.IntegrationTests\BravaPharm.OrderManagement.API.IntegrationTests.csproj", "{35C95CCB-21C5-4561-9D73-93FBA8BB3B08}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,14 +49,6 @@ Global
 		{04FF5C4D-7708-4379-B821-5FB3405C1116}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04FF5C4D-7708-4379-B821-5FB3405C1116}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04FF5C4D-7708-4379-B821-5FB3405C1116}.Release|Any CPU.Build.0 = Release|Any CPU
-		{099D450A-2E86-4CE2-A6B7-48437A6BB7EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{099D450A-2E86-4CE2-A6B7-48437A6BB7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{099D450A-2E86-4CE2-A6B7-48437A6BB7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{099D450A-2E86-4CE2-A6B7-48437A6BB7EF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35C95CCB-21C5-4561-9D73-93FBA8BB3B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35C95CCB-21C5-4561-9D73-93FBA8BB3B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35C95CCB-21C5-4561-9D73-93FBA8BB3B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35C95CCB-21C5-4561-9D73-93FBA8BB3B08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,8 +62,6 @@ Global
 		{B43C5EA8-60B8-41D8-BA1B-FFC522836914} = {F999A932-D75B-422D-94E3-6DB0F8D1838D}
 		{7202BF9B-7BD2-410C-9812-911A7D83DC94} = {8EA68CA5-E404-4ACF-B0DA-E41FB9FB2315}
 		{04FF5C4D-7708-4379-B821-5FB3405C1116} = {8EA68CA5-E404-4ACF-B0DA-E41FB9FB2315}
-		{099D450A-2E86-4CE2-A6B7-48437A6BB7EF} = {6F2CA5F5-87A8-47CA-9643-5A22D7FCF712}
-		{35C95CCB-21C5-4561-9D73-93FBA8BB3B08} = {6F2CA5F5-87A8-47CA-9643-5A22D7FCF712}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {829A7289-8081-4BFC-BBF1-CD033E42843E}
