@@ -13,9 +13,9 @@ namespace BravaPharm.OrderManagement.Application.Features.Categories.Queries.Get
     public class GetCategoryListQueryHandler : IRequestHandler<GetCategoryListQuery, List<CategorySimpleVm>>
     {
         private readonly IMapper _mapper;
-        private readonly IBaseRepository<Category> _categoryRepository;
+        private readonly ICategoryRepository _categoryRepository;
 
-        public GetCategoryListQueryHandler(IMapper mapper, IBaseRepository<Category> categoryRepository)
+        public GetCategoryListQueryHandler(IMapper mapper, ICategoryRepository categoryRepository)
         {
             _mapper = mapper;
             _categoryRepository = categoryRepository;
