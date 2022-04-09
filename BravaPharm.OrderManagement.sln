@@ -23,7 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.Persistence", "BravaPharm.OrderManagement.Persistence\BravaPharm.OrderManagement.Persistence.csproj", "{04FF5C4D-7708-4379-B821-5FB3405C1116}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BravaPharm.OrderManagement.Application.UnitTests", "BravaPharm.OrderManagement.Application.UnitTests\BravaPharm.OrderManagement.Application.UnitTests.csproj", "{245B36EC-DFEB-45AF-8293-72055FB6AD59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.Application.UnitTests", "BravaPharm.OrderManagement.Application.UnitTests\BravaPharm.OrderManagement.Application.UnitTests.csproj", "{245B36EC-DFEB-45AF-8293-72055FB6AD59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{30FFB8CA-7B3B-48ED-84B0-8D3EDFA90127}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BravaPharm.OrderManagement.App", "BravaPharm.OrderManagement.App\BravaPharm.OrderManagement.App.csproj", "{C3758EDB-B672-45C7-96DF-2D7BFC06A0EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +59,10 @@ Global
 		{245B36EC-DFEB-45AF-8293-72055FB6AD59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{245B36EC-DFEB-45AF-8293-72055FB6AD59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{245B36EC-DFEB-45AF-8293-72055FB6AD59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3758EDB-B672-45C7-96DF-2D7BFC06A0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3758EDB-B672-45C7-96DF-2D7BFC06A0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3758EDB-B672-45C7-96DF-2D7BFC06A0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3758EDB-B672-45C7-96DF-2D7BFC06A0EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +77,8 @@ Global
 		{7202BF9B-7BD2-410C-9812-911A7D83DC94} = {8EA68CA5-E404-4ACF-B0DA-E41FB9FB2315}
 		{04FF5C4D-7708-4379-B821-5FB3405C1116} = {8EA68CA5-E404-4ACF-B0DA-E41FB9FB2315}
 		{245B36EC-DFEB-45AF-8293-72055FB6AD59} = {6F2CA5F5-87A8-47CA-9643-5A22D7FCF712}
+		{30FFB8CA-7B3B-48ED-84B0-8D3EDFA90127} = {42068E35-7E22-4AD9-8172-F3E5D3DCAC8B}
+		{C3758EDB-B672-45C7-96DF-2D7BFC06A0EE} = {30FFB8CA-7B3B-48ED-84B0-8D3EDFA90127}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {829A7289-8081-4BFC-BBF1-CD033E42843E}

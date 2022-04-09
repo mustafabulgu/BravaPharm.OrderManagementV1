@@ -1,0 +1,19 @@
+﻿@page "/categorylist"
+<h3>CategoryOverview</h3>
+
+
+<table>
+<thead>
+    <tr>
+        <th>Category Name </th>
+    </tr>
+</thead>
+<tbody>
+    @foreach(var category in Categories)
+    {
+        <tr>
+            <td>@category.Name</td>
+        </tr>
+    }
+</tbody>
+</table>

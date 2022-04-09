@@ -34,6 +34,7 @@ var app = builder.Build();
 
 Log.Information("Starting up...");
 
+app.UseCors("AllowAll");
 app.UseDeveloperExceptionPage();
 app.UseMiddleware<ExcetionHandlerMiddleware>();
 // Configure the HTTP request pipeline.
