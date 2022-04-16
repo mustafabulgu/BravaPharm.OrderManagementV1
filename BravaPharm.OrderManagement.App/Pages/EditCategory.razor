@@ -1,0 +1,19 @@
+﻿@page "/EditCategory"
+@page "/EditCategory/{CategoryId}"
+
+<h3>EditCategory</h3>
+@Message
+<EditForm OnValidSubmit="HandleValidSubmit" Model="@CategoryToUpsert">
+    <DataAnnotationsValidator />
+    <ValidationSummary/>
+    <div class="form-group row">
+        <label for="name" class="col-sm-3">Category Name</label>
+        <InputText id="name" class="form-control col-sm-8" @bind-Value="@CategoryToUpsert.Name" placeholder="Category Name"/>
+        <ValidationMessage class="offset-sm-3 col-sm-8" For="(()=>CategoryToUpsert.Name)"></ValidationMessage>
+    </div>
+    <button class="btn btn-primary" type="submit" >Create Category</button>
+</EditForm>
+@if(CategoryToUpsert.CategoryId != Guid.Empty)
+{
+    <button class="btn btn-danger" type="submit" @onclick="HandleDeleteAsync">Delete Category</button>
+}

@@ -62,7 +62,7 @@ namespace BravaPharm.OrderManagement.App.Services
             {
                 await _client.UpdateCategoryAsync(_mapper.Map<UpdateCategoryCommand>(category));
                 response.Message = "Update successful";
-                response.Success = false;
+                response.Success = true;
                 response.Data = category.CategoryId;
             }
             catch(ApiException ex)
